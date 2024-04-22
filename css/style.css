@@ -128,6 +128,16 @@ footer{
 .traccia > img{
     width: 3.2rem;
 }
+/* hover  */
+a:hover{
+    color: white;
+}
+button:hover{
+    font-size: 120%;
+    cursor: pointer;
+}
+
+
 /* media  */
 
 @media all and (max-width: 992px){
