@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="wrap flax">
     <header>
         <!-- sidebar  -->
         <nav class="flex column sp-between">
@@ -22,15 +22,15 @@
                 </div>
                 <ul>
                     <li class="home">
-                        <i class="fa-solid fa-house"></i>
+                        <img class="icone" src="./img/home.svg" alt="home">
                         <a href="#">home</a>
                     </li>
                     <li class="cerca">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <img class="icone" src="./img/search.svg" alt="search">
                         <a href="#">cerca</a>
                     </li>
                     <li class="libreria">
-                        <i class="fa-solid fa-book-open"></i>
+                        <img class="icone" src="./img/libreria.svg" alt="libreria">
                         <a href="#">la tua libreria</a>
                     </li>
                 </ul>
@@ -52,8 +52,14 @@
             </section>
             <!-- profilo e installe app  -->
             <section>
-                <p class="instal">installa app</p>
-                <p class="profilo"><strong>john doe</strong></p>
+                <p class="instal">
+                    <img class="icone" src="./img/download.svg" alt="download">
+                    installa app
+                </p>
+                <p>
+                    <img class="icone profilo" src="./img/profile.svg" alt="profile">
+                    <strong>john doe</strong>
+                </p>
             </section>
         </nav>
 
@@ -69,19 +75,97 @@
             <!-- nav main  -->
             <nav>
                 <ul class="flex main-nav">
-                    <li>in evidenza</li>
-                    <li>podcast</li>
-                    <li>classifiche</li>
-                    <li>generi e mood</li>
-                    <li>nuove uscite</li>
-                    <li>scopri</li>
+                    <li>
+                        <a href="#">in evidenza</a>
+                    </li>
+                    <li>
+                        <a href="#">podcast</a>
+                    </li>
+                    <li>
+                        <a href="#">classifiche</a>
+                    </li>
+                    <li>
+                        <a href="#">generi e mood</a>
+                    </li>
+                    <li>
+                        <a href="#">nuove uscite</a>
+                    </li>
+                    <li>
+                        <a href="#">scopri</a>
+                    </li>
                 </ul>
             </nav>
+            <!-- recentemente riprodotti  -->
+            <section>
+                <h1>recently played</h1>
+                <ul class="flex album sp-between pd-top">
+                    <li class="flex column">
+                        <img src="./img/metal_lifting.jpg" alt="metal_lifting">
+                        <strong>heavy metal</strong>
+                        <p>subtitle</p>
+                    </li>
+                    <li class="flex column">
+                        <img src="./img/stranger.jpeg" alt="stranger">
+                        <strong>strenger things vol.1(a netflix original  series soundtrack)</strong>
+                        <p>kyle dixon & michael stein</p>
+                    </li>
+                    <li class="flex column">
+                        <img src="./img/aquietplace.jpeg" alt="a quite place">
+                        <strong>a quiet place</strong>
+                        <p>subtitle</p>
+                    </li>
+                    <li class="flex column">
+                        <img src="./img/split.jpeg" alt="split">
+                        <strong>split</strong>
+                        <p>subtitle</p>
+                    </li>
+                    <li class="flex column">
+                        <img src="./img/cure.jpeg" alt="cure">
+                        <strong>a cure for wellness</strong>
+                        <p>subtitle</p>
+                    </li>
+                    <li class="flex column">
+                        <img src="./img/sinister.jpeg" alt="sinister">
+                        <strong>sinister</strong>
+                        <p>subtitle</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- creati per  -->
+            <section>
+                <h1>recently played</h1>
+                <ul class="flex album pd-top">
+                    <li class="flex column">
+                        <img src="./img/radar.jpeg" alt="radar">
+                        <strong>realease radar</strong>
+                    </li>
+                    <li class="flex column">
+                        <img src="./img/mixdaily.jpeg" alt="daily mix">
+                        <strong>daily mix 1</strong>
+                    </li>
+            </section>
         </div>
     </main>
 
     <footer>
-
+    <!-- barra riproduzione  -->
+    <section class="flex sp-between">
+        <ul class="flex brano-riprodotto">
+            <li class="traccia">
+                <img src="./img/sinister.jpeg" alt="sinister">
+            </li>
+            <li>
+                <strong>sinister</strong>
+                <p>brano nome</p>
+            </li>
+            <li>
+                <i class="fa-regular fa-heart"></i>
+            </li>
+            <li>
+                <i class="fa-regular fa-folder"></i>
+            </li>
+        </ul>
+    </section>
     </footer>
 </body>
 </html>

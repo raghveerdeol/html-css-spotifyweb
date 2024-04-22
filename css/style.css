@@ -10,18 +10,25 @@ body{
     font-family: "Montserrat", sans-serif;
     text-transform: capitalize;
     color: #a3a3a3;
-    display: flex;
 
 }
 header > nav{
     background-color: #000000;
     width: 15vw;
-    height: 100vh;
+    height: 85vh;
     line-height: 160%;
-    padding: 2%;
+    padding: 1%;
+    position: fixed;
+}
+strong,
+h1{
+    color: white;
 }
 .flex{
     display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
 }
 .column{
     flex-direction: column;
@@ -35,9 +42,21 @@ header > nav{
 a{
     color: #a3a3a3;
 }
+.icone{
+    width: 10%;
+    vertical-align: middle;
+
+}
 main{
     background-color: #0f1520;
+    margin-left: 15vw;
 
+}
+.profilo{
+    background-color: gray;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
 }
 main > div{
     width: 85vw;
@@ -46,8 +65,6 @@ main > div{
     background-color: #080b12;
     text-align: end;
     padding: 1%;
-    position: fixed;
-
 }
 button{
     background-color: transparent;
@@ -69,6 +86,47 @@ button{
     padding: 1%;
     text-transform: uppercase;
 }
+div > section{
+    padding: 2%;
+}
+.album > li{
+    width: calc(92%/6);
+    text-align: center;
+}
+.album > li > strong{
+    margin: 10% 0%;
+}
+.pd-top{
+    padding-top: 3%;
+}
+footer{
+    height: 15vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    padding: 1% 0%;
+}
+.brano-riprodotto{
+    font-size: 0.7rem;
+    justify-content: space-around;
+    width: 16%;
+    align-items: center;
+}
+.traccia{
+    width: 22%;
+}
+.traccia > img{
+    width: 100%;
+}
 /* media  */
 
-@media all and (max-width: xs)
+@media all and (max-width: 768px)
+{
+    .album{
+        flex-wrap: wrap;
+    }
+    .album > li{
+        width: calc(92%/4);
+    }
+}
