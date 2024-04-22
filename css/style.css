@@ -15,7 +15,7 @@ body{
 .sidebar{
     background-color: #000000;
     width: 15rem;
-    height: 85vh;
+    height: 89vh;
     line-height: 230%;
     padding: 1%;
     position: fixed;
@@ -56,7 +56,7 @@ a{
 main{
     background-color: #0f1520;
     margin-left: 15rem;
-    height: 85vh;
+    height: 89vh;
     overflow: scroll;
 }
 .profilo{
@@ -65,13 +65,16 @@ main{
     height: 22px;
     width: 22px;
 }
-main > div{
+/* main > div{
     max-width: 85vw;
-}
+} */
 .upgrade{
     background-color: #080b12;
     text-align: end;
     padding: 1%;
+    position: fixed;
+    right: 0rem;
+    left: 15rem;
 }
 button{
     background-color: transparent;
@@ -101,6 +104,7 @@ div > section{
 .album > li{
     width: calc(92%/6);
     text-align: center;
+    margin-right: 2%;
 }
 .album > li > strong{
     margin: 10% 0%;
@@ -108,8 +112,11 @@ div > section{
 .pd-top{
     padding-top: 3%;
 }
+.pd-bottom{
+    padding-bottom: 2%;
+}
 footer{
-    height: 15vh;
+    height: 11vh;
     width: 100vw;
     position: fixed;
     bottom: 0;
@@ -127,6 +134,9 @@ footer{
 }
 .traccia > img{
     width: 3.2rem;
+}
+.border-radius{
+    border-radius: 50%;
 }
 /* hover  */
 a:hover{
@@ -159,7 +169,6 @@ button:hover{
     .sidebar{
         background-color: #000000;
         width: 5rem;
-        height: 85vh;
         line-height: 160%;
         padding: 5%;
         position: fixed;
@@ -168,7 +177,6 @@ button:hover{
 
     main{
         margin-left: 5rem;
-        height: 85vh;
     }
     .logo{
         content: url(../img/logo-small.svg);
