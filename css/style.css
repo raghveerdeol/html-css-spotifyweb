@@ -12,9 +12,9 @@ body{
     color: #a3a3a3;
 
 }
-header > nav{
+.sidebar{
     background-color: #000000;
-    width: 15vw;
+    width: 15rem;
     height: 85vh;
     line-height: 160%;
     padding: 1%;
@@ -49,8 +49,9 @@ a{
 }
 main{
     background-color: #0f1520;
-    margin-left: 15vw;
-
+    margin-left: 15rem;
+    height: 85vh;
+    overflow: scroll;
 }
 .profilo{
     background-color: gray;
@@ -119,14 +120,55 @@ footer{
 .traccia > img{
     width: 100%;
 }
+.logo-small{
+    display: none;
+}
 /* media  */
 
-@media all and (max-width: 768px)
-{
+@media all and (max-width: 992px){
     .album{
         flex-wrap: wrap;
     }
     .album > li{
         width: calc(92%/4);
+    }
+}
+
+@media all and (max-width: 768px){
+    .album > li{
+        width: 48%;
+    }
+}
+
+@media all and (max-width: 576px){
+    .sidebar{
+        background-color: #000000;
+        width: 5rem;
+        height: 85vh;
+        line-height: 160%;
+        padding: 5%;
+        position: fixed;
+    }
+
+    main{
+        margin-left: 5rem;
+        height: 85vh;
+    }
+    .logo{
+        content: url(../img/logo-small.svg);
+    }
+    .home{
+        content: url(../img/home.svg);
+        margin: 50% 0;
+    }
+    .cerca{
+        content: url(../img/search.svg);
+        margin: 50% 0;
+    }
+    .libreria{
+        content: url(../img/libreria.svg);
+    }
+    .none{
+        display: none;
     }
 }
