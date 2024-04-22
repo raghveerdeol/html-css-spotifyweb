@@ -120,9 +120,6 @@ footer{
 .traccia > img{
     width: 100%;
 }
-.logo-small{
-    display: none;
-}
 /* media  */
 
 @media all and (max-width: 992px){
@@ -148,6 +145,7 @@ footer{
         line-height: 160%;
         padding: 5%;
         position: fixed;
+        align-items: center;
     }
 
     main{
@@ -156,6 +154,7 @@ footer{
     }
     .logo{
         content: url(../img/logo-small.svg);
+        width: 2rem;
     }
     .home{
         content: url(../img/home.svg);
