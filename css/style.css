@@ -53,6 +53,9 @@ a{
     vertical-align: middle;
 
 }
+.add{
+    font-size: 2rem;
+}
 main{
     background-color: #0f1520;
     margin-left: 15rem;
@@ -137,6 +140,16 @@ footer{
 }
 .border-radius{
     border-radius: 50%;
+}
+.riproduzione{
+    width: 360px;
+    align-items: center;
+}
+.riproduzione > ul{
+    width: 180px;
+}
+.volume{
+    width: 200px;
 }
 /* hover  */
 a:hover{
