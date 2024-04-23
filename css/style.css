@@ -81,6 +81,7 @@ main{
     position: fixed;
     right: 0rem;
     left: 15rem;
+    z-index: 1;
 }
 button{
     background-color: transparent;
@@ -127,6 +128,9 @@ div > section{
     font-size: 3rem;
     transform: translate(-50%,-50%);
     padding: 41%;
+}
+.card-radius{
+    border-radius: 50%;
 }
 .pd-top{
     padding-top: 3%;
@@ -256,6 +260,7 @@ button:hover{
 }
 .traccia-riprodotta:hover{
     background-color: greenyellow;
+    cursor: pointer;
 }
 .play:hover{
     transform: scale(1.2);
