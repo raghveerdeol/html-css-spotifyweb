@@ -129,28 +129,74 @@ footer{
 .brano-riprodotto{
     font-size: 0.7rem;
     justify-content: space-around;
-    width: 16rem;
     align-items: center;
 }
+.width{
+    width: 50%;
+}
 .traccia{
-    width: 2rem;
+    width: 30%
 }
 .traccia > img{
-    width: 3.2rem;
+    width: 100%;
 }
 .border-radius{
     border-radius: 50%;
 }
+.opzioni-riproduzione{
+    align-items: center;
+    width: 15%;
+}
 .riproduzione{
-    width: 360px;
+    width: 50%;
+    align-items: center;
+    color: white;
+}
+.barra{
+    width: 100%;
     align-items: center;
 }
-.riproduzione > ul{
-    width: 180px;
+.control-brano{
+    width: 10rem;
 }
 .volume{
-    width: 200px;
+    width: 20%;
+    font-size: 80%;
+    justify-content: space-around;
+    align-items: center;
 }
+.barra-traccia{
+    height: 4px;
+    width: 32rem;
+    border-radius: 1rem;
+    background-color: grey;
+}
+.traccia-riprodotta{
+    width: 5rem;
+    height: 4px;
+    background-color: white;
+    border-radius: 1rem;
+}
+.control-brano > li > a,
+.volume > li > a{
+    color: white;
+}
+.barra-volume{
+    height: 4px;
+    width: 8rem;
+    border-radius: 1rem;
+    background-color: grey;
+}
+.altezza-volume{
+    width: 2rem;
+    height: 4px;
+    background-color: white;
+    border-radius: 1rem;
+}
+.tempo{
+    font-size: 10px;
+}
+
 /* hover  */
 a:hover{
     color: white;
@@ -159,12 +205,6 @@ button:hover{
     font-size: 120%;
     cursor: pointer;
 }
-.barra-traccia{
-    height: 2px;
-    width: 300px;
-    background-color: grey;
-}
-
 
 
 /* media  */

@@ -165,21 +165,26 @@
     <footer>
     <!-- barra riproduzione  -->
     <section class="flex sp-between">
-        <ul class="flex brano-riprodotto">
-            <li class="traccia">
-                <img src="./img/sinister.jpeg" alt="sinister">
-            </li>
-            <li>
-                <strong>sinister</strong>
-                <p>brano nome</p>
-            </li>
-            <li>
-                <i class="fa-regular fa-heart"></i>
-            </li>
-            <li>
-                <i class="fa-regular fa-folder"></i>
-            </li>
-        </ul>
+        <div class="flex opzioni-riproduzione">
+            <ul class="flex brano-riprodotto">
+                <li class="traccia">
+                    <img src="./img/sinister.jpeg" alt="sinister">
+                </li>
+                <li>
+                    <strong>sinister</strong>
+                    <p>brano nome</p>
+                </li>
+            </ul>
+            <ul class="flex width sp-between">
+                <li>
+                    <i class="fa-regular fa-heart"></i>
+                </li>
+                <li>
+                    <i class="fa-regular fa-folder"></i>
+                </li>
+            </ul>
+        </div>
+
         
         <div class="flex column riproduzione">
             <ul class="flex sp-between control-brano">
@@ -199,8 +204,8 @@
                     <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
                 </li>
             </ul>
-            <ul class="flex sp-between">
-                <li>
+            <ul class="flex sp-between barra">
+                <li class="tempo">
                     0:25
                 </li>
                 <li>
@@ -209,13 +214,13 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="tempo">
                     4:35
                 </li>
             </ul>
         </div>
 
-        <ul class="flex sp-between volume">
+        <ul class="flex volume">
             <li>
                 <a href="#"><i class="fa-solid fa-list"></i></a>
             </li>
@@ -226,7 +231,10 @@
                 <a href="#"><i class="fa-solid fa-volume-high"></i></a>
             </li>
             <li>
-                <a href="#"></a>
+                <div class="barra-volume">
+                    <div class="altezza-volume">
+                    </div>
+                </div>
             </li>
         </ul>
     </section>
