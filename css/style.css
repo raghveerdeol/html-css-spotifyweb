@@ -22,6 +22,9 @@ body{
     overflow: scroll;
     font-size: 11px;
 }
+.logo-small{
+    display: none;
+}
 strong,
 h1{
     color: white;
@@ -111,6 +114,20 @@ div > section{
 }
 .album > li > strong{
     margin: 10% 0%;
+}
+.show{
+    position: relative;
+}
+.card{
+    display: none;
+    position: absolute;
+    width: 2rem;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.show:hover .card{
+    display: inline;
 }
 .pd-top{
     padding-top: 3%;
@@ -215,7 +232,7 @@ a:hover{
     color: white;
 }
 button:hover{
-    font-size: 120%;
+    transform: scale(1.2);
     cursor: pointer;
 }
 .barra-volume > div:hover{
@@ -225,7 +242,12 @@ button:hover{
     background-color: greenyellow;
 }
 .play:hover{
-    font-size: 2.5rem;
+    transform: scale(1.2);
+}
+.nome:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 
@@ -296,7 +318,8 @@ button:hover{
         line-height: 160%;
         padding: 4%;
         position: fixed;
-        align-items: center;
+        align-items: 0;
+        overflow: clip;
     }
     .barra > li{
         padding: 0 .2rem;
@@ -331,35 +354,23 @@ button:hover{
     main{
         margin-left: 5rem;
     }
-    .logo{
-        content: url(../img/logo-small.svg);
-        width: 2rem;
-    }
-    .home{
-        content: url(../img/home.svg);
-        margin: 50% 0;
-    }
-    .cerca{
-        content: url(../img/search.svg);
-        margin: 50% 0;
-    }
-    .libreria{
-        content: url(../img/libreria.svg);
-    }
     .none{
         display: none;
     }
-    .instal{
-        content: url(../img/download.svg);
+    .icone{
         width: 2rem;
+        height: 2rem;
+        margin-top: 35%;;
+    }
+    .instal{
         border: none;
     }
-    .profile{
-        content: url(../img/profile.svg);
-        margin-top: 1rem;
-        background-color: gray;
-        border-radius: 50%;
-        height: 2rem;
+    .logo-small{
+        display: block;
         width: 2rem;
+    }
+    .icone:hover{
+        color: white;
+        cursor: pointer;
     }
 }

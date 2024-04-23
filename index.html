@@ -17,21 +17,22 @@
         <nav class="sidebar flex column sp-between">
             <!-- sezione nav principale  -->
             <section>
-                <div class="logo">
-                    <img src="./img/logo.svg" alt="logo">
+                <div class="logo ">
+                    <img class="none" src="./img/logo.svg" alt="logo">
+                    <img class="logo-small" src="./img/logo-small.svg" alt="logo-small">
                 </div>
                 <ul>
                     <li class="home">
                         <img class="icone" src="./img/home.svg" alt="home">
-                        <a href="#">home</a>
+                        <a class="none" href="#">home</a>
                     </li>
                     <li class="cerca">
                         <img class="icone" src="./img/search.svg" alt="search">
-                        <a href="#">cerca</a>
+                        <a class="none" href="#">cerca</a>
                     </li>
                     <li class="libreria">
                         <img class="icone" src="./img/libreria.svg" alt="libreria">
-                        <a href="#">la tua libreria</a>
+                        <a class="none" href="#">la tua libreria</a>
                     </li>
                 </ul>
                 <!-- playlist  -->
@@ -54,11 +55,11 @@
             <section>
                 <p class="instal pd-bottom">
                     <img class="icone" src="./img/download.svg" alt="download">
-                    <a href="#">installa app</a>
+                    <a class="none" href="#">installa app</a>
                 </p>
                 <p class="profile pd-top">
                     <img class="icone profilo" src="./img/profile.svg" alt="profile">
-                    <strong>john doe</strong>
+                    <strong class="none" >john doe</strong>
                 </p>
             </section>
         </nav>
@@ -99,8 +100,9 @@
             <section>
                 <h1>recently played</h1>
                 <ul class="flex album pd-top">
-                    <li class="flex column">
-                        <img src="./img/metal_lifting.jpg" alt="metal_lifting">
+                    <li class="flex column show">
+                            <img src="./img/metal_lifting.jpg" alt="metal_lifting">
+                            <i class="fa-solid fa-play card"></i>
                         <strong>heavy metal</strong>
                         <p>subtitle</p>
                     </li>
@@ -172,7 +174,7 @@
                 </li>
                 <li>
                     <strong>sinister</strong>
-                    <p>brano nome</p>
+                    <p class="nome">brano nome</p>
                 </li>
             </ul>
             <ul class="flex width sp-between heart">
