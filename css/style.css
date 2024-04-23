@@ -119,15 +119,14 @@ div > section{
     position: relative;
 }
 .card{
-    display: none;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    width: 2rem;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-.show:hover .card{
-    display: inline;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+    transform: translate(-50%,-50%);
+    padding: 41%;
 }
 .pd-top{
     padding-top: 3%;
@@ -201,6 +200,21 @@ footer{
     height: 4px;
     background-color: white;
     border-radius: 1rem;
+    position: relative;
+}
+.point{
+    visibility: hidden;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    bottom: -40%;
+}
+.traccia-riprodotta:hover .point{
+    visibility: visible;
+    cursor: pointer;
 }
 .control-brano > li > a,
 .volume > li > a{
@@ -217,6 +231,7 @@ footer{
     height: 4px;
     background-color: white;
     border-radius: 1rem;
+    position: relative;
 }
 .tempo{
     font-size: 10px;
@@ -235,10 +250,11 @@ button:hover{
     transform: scale(1.2);
     cursor: pointer;
 }
-.barra-volume > div:hover{
+.altezza-volume:hover{
     background-color: greenyellow;
+    cursor: pointer;
 }
-.barra-traccia > div:hover{
+.traccia-riprodotta:hover{
     background-color: greenyellow;
 }
 .play:hover{
@@ -247,6 +263,19 @@ button:hover{
 .nome:hover{
     color: white;
     text-decoration: underline;
+    cursor: pointer;
+}
+.show:hover .card{
+    cursor: pointer;
+    display: inline;
+    visibility: visible;
+}
+.traccia-riprodotta:hover .point{
+    visibility: visible;
+    cursor: pointer;
+}
+.altezza-volume:hover .point{
+    visibility: visible;
     cursor: pointer;
 }
 
