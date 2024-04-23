@@ -159,6 +159,12 @@ button:hover{
     font-size: 120%;
     cursor: pointer;
 }
+.barra-traccia{
+    height: 2px;
+    width: 300px;
+    background-color: grey;
+}
+
 
 
 /* media  */
@@ -187,7 +193,9 @@ button:hover{
         position: fixed;
         align-items: center;
     }
-
+    .upgrade{
+        left: 5rem;
+    }
     main{
         margin-left: 5rem;
     }
