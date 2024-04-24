@@ -71,13 +71,10 @@ main{
     height: 22px;
     width: 22px;
 }
-/* main > div{
-    max-width: 85vw;
-} */
 .upgrade{
     background-color: #080b12;
     text-align: end;
-    padding: 1%;
+    padding: 18px;
     position: fixed;
     right: 0rem;
     left: 15rem;
